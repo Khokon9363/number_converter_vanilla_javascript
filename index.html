@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Number System Converter">
+    <meta name="description" content="Convert any number system to other, like Decimal, Binary, Octal, Hexadecimal.">
+    <title>Number System Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Convert Any Number</h1>
+        <label for="d">Decimal :</label>
+        <input type="number" onkeyup="calculate(this.value, 10, 'd')" id="d" placeholder="Decimal Number">
+
+        <label for="b">Binary :</label>
+        <input type="number" onkeyup="calculate(this.value, 2, 'b')" id="b" placeholder="b Number">
+
+        <label for="o">Octal :</label>
+        <input type="number" onkeyup="calculate(this.value, 8, 'o')" id="o" placeholder="o Number">
+
+        <label for="h">Hexadecimal :</label>
+        <input type="text" onkeyup="calculate(this.value, 16, 'h')" id="h" placeholder="h Number">
+    </div>
+    
+    <script type="text/javascript">
+        document.addEventListener("contextmenu", function(e){
+            e.preventDefault();
+        }, false);
+    </script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
