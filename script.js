@@ -1,4 +1,4 @@
-// ParseInt(num, base) used for convert number any to decimal
+// parseFloat(num, base) used for convert number any to decimal
 // num.toString(base) used for convert number decimal to any
 // toUpperCase used for capitalized the converted values. Also convert my Hex when I type and when I receive the result
 // It will be more interesting , If i add regex in switch
@@ -16,7 +16,7 @@ let d = document.getElementById("d"),
             h.value = null;
             return;
         } 
-        let inputtedVal = parseInt(val, base); // decimal value
+        let inputtedVal = parseFloat(val, base); // decimal value
 
         // results
         switch(which) {
